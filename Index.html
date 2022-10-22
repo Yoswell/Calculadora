@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <div class="container-fluid cards" id="Principal">
+        <div class="card">
+            <form name="calculator" class="row container-button">
+                <input class="screen" type="textfield" name="cal" value="" autocomplete="off" readonly></input>
+
+                <input type="button" value="1" onclick="val1();">
+                <input type="button" value="2" onclick="val2();">
+                <input type="button" value="3" onclick="val3();">
+                <input type="button" value="+" onclick="valmas();" class="selected">
+
+                <input type="button" value="4" onclick="val4();">
+                <input type="button" value="5" onclick="val5();">
+                <input type="button" value="6" onclick="val6();">
+                <input type="button" value="-" onclick="valmenos();" class="selected">
+
+                <input type="button" value="7" onclick="val7();">
+                <input type="button" value="8" onclick="val8();">
+                <input type="button" value="9" onclick="val9();">
+                <input type="button" value="*" onclick="valpor();" class="selected">
+
+                <input type="button" value="0" onclick="val0();">
+                <input type="reset"  value="AC">
+                <input type="button" value="=" onclick="valequals();">
+                <input type="button" value="/" onclick="valdiv();" class="selected">
+            </form>
+        </div>
+    </div>
+</body>
+    <script src="React.js"></script>
+</html>
