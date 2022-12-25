@@ -1,42 +1,53 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Silkscreen&display=swap');
 
+* { font-family: 'Silkscreen', cursive; }
 
 body {
-    background-color: #23262e;
+    background-color: #111113 !important;
 }
 
+header {
+    background-color: #474952;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header h1 { font-size: 2rem; font-weight: 100; color: #000;}
+
 #Principal {
+    margin-top: 80px;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards {
     width: 100%;
     height: 100%;
 }
 
-.cards {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    width: 100%;
-}
-
 .card {
-    position: relative;
-    top: 90px;
-    width: 100%;
-    height: 70%;
-    max-width: 390px;
-    min-height: 450px;
-    background-color: #474952;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100% !important;
+    height: 100% !important;
+    max-width: 500px !important;
+    min-height: 450px !important;
+    background-color: #474952 !important;
     padding: 3rem 2rem;
     transition: 0.3s;
-    border-radius: 20px;
-    box-shadow: 10px 10px 0 10px rgb(0, 0, 0);
+    border-radius: 10px !important;
 }
 
 .screen {
-    position: relative;
-    top: -80px;
-    left: -20px;
+    border: none;
     width: 370px;
-    height: 20%;
+    height: 80px;
     border-radius: .5rem;
     background-color: #ffffff;
     font-size: 2.5rem;
@@ -45,26 +56,34 @@ body {
 }
 
 .container-button {
-    position: relative;
-    top: 100px;
-    left: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     height: 100%;
 }
 
-input {
-    position: relative;
-    width: 80px;
-    height: 100px;
+.separate {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.btnn {
+    width: 90px !important;
+    height: 100px !important;
     border-radius: 8px;
-    left: -4%;
-    margin: 4px;
     cursor: pointer;
-    border: 5px solid #474952;
+    border: 3px solid #474952;
     background-color: #ffffff;
-    font-weight: 200;
-    font-size: 1.2rem;
-    font-family: 'Press Start 2P', cursive;
+    font-weight: 100;
+    font-size: 1.5rem;
+    font-family: 'Silkscreen', cursive;
+}
+
+ .active {
+    background-color: #262832 !important;
+    color: #fff;
 }
 
 input:hover {
